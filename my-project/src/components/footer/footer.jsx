@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './footer.module.css'; // Ensure you're importing the CSS module here
+import classes from './footer.module.css';
 import { LuFacebook } from "react-icons/lu";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
