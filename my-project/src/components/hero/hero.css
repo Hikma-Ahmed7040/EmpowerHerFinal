@@ -1,0 +1,194 @@
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+/* Loading Spinner */
+.hero-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.hero-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #facc15;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Background Images */
+.hero-bg-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+/* Content Container */
+.hero-content {
+  position: relative;
+  z-index: 10;
+  padding: 0 1.5rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+/* Text Container */
+.hero-text-container {
+  margin-bottom: 2rem;
+}
+
+/* Title */
+.hero-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.hero-title span {
+  display: block;
+}
+
+/* Caption */
+.hero-caption {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: 1.125rem;
+  max-width: 48rem;
+  margin: 0 auto 2rem;
+  transition: color 0.3s ease;
+}
+
+/* Button */
+.hero-button {
+  position: relative;
+  padding: 1rem 2rem;
+  background-color: #facc15;
+  color: black;
+  font-weight: 700;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-button-text {
+  position: relative;
+  z-index: 10;
+}
+
+.hero-button-hover {
+  position: absolute;
+  inset: 0;
+  background-color: #fde047;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hero-button:hover .hero-button-hover {
+  opacity: 1;
+}
+
+/* Indicators */
+.hero-indicators {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.hero-indicator {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-indicator:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-indicator.active {
+  width: 1.5rem;
+  background-color: #facc15;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-caption {
+    font-size: 1.75rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 3.75rem;
+  }
+  
+  .hero-caption {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-title {
+    font-size: 4.5rem;
+  }
+}

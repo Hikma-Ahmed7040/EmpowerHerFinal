@@ -1,0 +1,98 @@
+/* footer.module.css */
+
+.footer_outer_container {
+  background-color: #5a3921; /* Dark brown background */
+  padding: 40px 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_inner_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.first_section,
+.second_section,
+.third_section {
+  flex: 1;
+  margin: 20px;
+}
+
+.logo__container {
+  color: #FFD700; /* Gold color for the logo */
+  font-family: 'Lobster', cursive; /* Matching the logo font from the header */
+  font-size: 32px; /* Adjusted size for emphasis */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer_icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.footer_icons li a {
+  font-size: 28px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer_icons li a:hover {
+  color: #FFEB3B; /* Yellowish color on hover */
+}
+
+.second_section h3,
+.third_section h3 {
+  color: #FFD700; /* Gold color for the section headings */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.lists {
+  list-style: none;
+  padding: 0;
+}
+
+.lists li {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.lists li:hover {
+  color: #FFEB3B; /* Yellowish hover effect */
+}
+
+.lists li a {
+  text-decoration: none;
+  color: white;
+}
+
+.lists li a:hover {
+  color: #FFEB3B; /* Yellowish color on hover for links */
+}
+
+@media (max-width: 768px) {
+  .footer_inner_container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .first_section,
+  .second_section,
+  .third_section {
+      margin-bottom: 30px;
+  }
+
+  .logo__container {
+      font-size: 38px;
+  }
+}
