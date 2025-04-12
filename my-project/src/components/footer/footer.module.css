@@ -1,58 +1,55 @@
-/* footer.module.css */
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Dancing+Script:wght@700&display=swap');
 .footer_outer_container {
-  background-color: #5a3921; /* Dark brown background */
-  padding: 40px 0;
+  background-color: #5a3921;
   color: white;
-  display: flex;
-  justify-content: center;
+  padding: 2rem 1rem;
 }
 
 .footer_inner_container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
   max-width: 1200px;
-  padding: 0 20px;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
 
-.first_section,
-.second_section,
-.third_section {
-  flex: 1;
-  margin: 20px;
+.first_section {
+  text-align: center;
 }
 
-.logo__container {
-  color: #FFD700; /* Gold color for the logo */
-  font-family: 'Lobster', cursive; /* Matching the logo font from the header */
-  font-size: 32px; /* Adjusted size for emphasis */
-  font-weight: bold;
-  margin-bottom: 20px;
+.logo__container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #F59E0B !important;
 }
 
 .footer_icons {
   display: flex;
-  gap: 15px;
-  margin-top: 20px;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 1rem 0;
 }
 
-.footer_icons li a {
-  font-size: 28px;
+.footer_icons a {
   color: white;
+  font-size: 1.5rem;
   transition: color 0.3s ease;
 }
 
-.footer_icons li a:hover {
-  color: #FFEB3B; /* Yellowish color on hover */
+.footer_icons a:hover {
+  color: #F59E0B;
 }
 
-.second_section h3,
-.third_section h3 {
-  color: #FFD700; /* Gold color for the section headings */
-  font-size: 20px;
-  margin-bottom: 10px;
+.second_section, .third_section {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.second_section h3, .third_section h3 {
+  color: #F59E0B;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .lists {
@@ -61,38 +58,41 @@
 }
 
 .lists li {
-  font-size: 16px;
-  color: white;
-  margin-bottom: 10px;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .lists li:hover {
-  color: #FFEB3B; /* Yellowish hover effect */
-}
-
-.lists li a {
-  text-decoration: none;
-  color: white;
-}
-
-.lists li a:hover {
-  color: #FFEB3B; /* Yellowish color on hover for links */
+  color: #F59E0B;
 }
 
 @media (max-width: 768px) {
   .footer_inner_container {
-      flex-direction: column;
-      align-items: center;
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
-  .first_section,
-  .second_section,
-  .third_section {
-      margin-bottom: 30px;
+  .first_section, .second_section, .third_section {
+    margin: 1rem 0;
   }
 
-  .logo__container {
-      font-size: 38px;
+  .logo__container h1 {
+    font-size: 1.5rem;
+  }
+
+  .footer_icons {
+    gap: 1rem;
+  }
+
+  .lists li {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer_inner_container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
