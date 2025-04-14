@@ -1,8 +1,7 @@
 import React from 'react';
 import classes from './footer.module.css';
-import { LuFacebook } from "react-icons/lu";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { AiOutlineYoutube } from "react-icons/ai";
-import { FaInstagram } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -19,7 +18,7 @@ function Footer() {
           <ul className={classes.footer_icons}>
             <li>
               <a href="https://www.facebook.com/evangaditech" target="_blank" rel="noreferrer">
-                <LuFacebook />
+                <FaFacebook />
               </a>
             </li>
             <li>
@@ -39,9 +38,9 @@ function Footer() {
         <div className={classes.second_section}>
           <h3>Useful Links</h3>
           <ul className={classes.lists}>
-            <li>How it works</li>
-            <li>Terms of Service</li>
-            <li>Privacy Policy</li>
+            <li><Link to="/how-it-works">How it works</Link></li>
+            <li><Link to="/terms">Terms of Service</Link></li>
+            <li><Link to="/privacy">Privacy Policy</Link></li>
           </ul>
         </div>
 
@@ -50,10 +49,15 @@ function Footer() {
           <h3>Contact Info</h3>
           <ul className={classes.lists}>
             <li>Evangadi Networks</li>
-            <li>support@evangadi.com</li>
-            <li>+1-202-386-2702</li>
+            <li><a href="mailto:support@evangadi.com">support@evangadi.com</a></li>
+            <li><a href="tel:+12023862702">+1-202-386-2702</a></li>
           </ul>
         </div>
+      </div>
+      
+      {/* Copyright Section */}
+      <div className={classes.copyright}>
+        <p>&copy; {new Date().getFullYear()} EmpowerHer. All rights reserved.</p>
       </div>
     </footer>
   );

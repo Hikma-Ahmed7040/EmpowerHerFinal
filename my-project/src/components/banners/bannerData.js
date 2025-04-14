@@ -11,7 +11,7 @@ export const bannerData = [
     title: "Handmade Accessories",
     name: "Handmade products",
     imgLink:
-      "https://th.bing.com/th/id/OIP.GW_7QFaatcOgD7ZlIQYgkwHaFt?w=1000&h=771&rs=1&pid=ImgDetMain",
+      "https://th.bing.com/th/id/OIP.zjfmGd62BHdD9-AiB15r2gHaKy?rs=1&pid=ImgDetMain",
     rating: 4.8,
     accentColor: "#9A6A4F" // Warm terracotta
   },
@@ -20,14 +20,14 @@ export const bannerData = [
     title: "Home Decor",
     name: "Home decor",
     imgLink:
-      "https://th.bing.com/th/id/R.de703eb30fa75dcb67e73f19c80e19c7?rik=%2bVoLPzfOIR2nQw&pid=ImgRaw&r=0",
+      "https://th.bing.com/th/id/R.4c0c5119818db8160bb2e69dab584145?rik=JZxprTNcKvWBBA&pid=ImgRaw&r=0",
     rating: 4.3,
     accentColor: "#7F5E46" // Darker brown
   },
   {
     title: "Skincare Products",
     name: "Skincare Products",
-    imgLink: "https://th.bing.com/th/id/OIP.nsfW-40HXbQVXPT5-tKY4wHaE7?w=306&h=203&c=8&rs=1&qlt=90&o=6&dpr=1.8&pid=3.1&rm=2",
+    imgLink: "https://media.istockphoto.com/id/1277113035/photo/young-black-beauty-with-afro-hairstyle.jpg?s=170667a&w=0&k=20&c=OaHeq4LSgAMM1DfFN12CYWVDNfjMb8EgeScIescmajg=",
     rating: 4.7,
     accentColor: "#C89B7B" // Light beige
 

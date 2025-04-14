@@ -2,8 +2,10 @@ import Header from "./components/Header/Header";
 import Banners from "./components/banners/banners"; // Corrected import
 // import TraditionalClothesPage from "./components/TraditionalClothes/traditionalClothes";
 import Home from "./components/Home";
-import ProductDetails from "./pages/productDetails";
+import Product from "./components/Product/Product";
+// import ProductDetails from "./compo";
 import Footer from "./components/footer/footer"
+
 
 function App() {
   return (
@@ -12,7 +14,8 @@ function App() {
       <Header />
       <Home />
       <Banners /> 
-      <ProductDetails />
+      <Product />
+      {/* <ProductDetails /> */}
       <Footer />
       {/* <TraditionalClothesPage/> */}
     </div>
