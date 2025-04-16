@@ -8,18 +8,18 @@ const Navbar = () => {
     <nav className="bg-[#8B5E3C] text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-2xl font-bold">EmpowerHer</h1>
+        {/* <h1 className="text-2xl font-bold">EmpowerHer</h1> */}
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation
         <ul className="hidden md:flex space-x-6 text-lg font-semibold">
           <li><a href="#" className="hover:text-yellow-400">Traditional Clothes</a></li>
           <li><a href="#" className="hover:text-yellow-400">Handmade Accessories</a></li>
           <li><a href="#" className="hover:text-yellow-400">Home Decor</a></li>
           <li><a href="#" className="hover:text-yellow-400">Skincare Products</a></li>
-        </ul>
+        </ul> */}
 
         {/* Search & Account */}
-        <div className="hidden md:flex items-center space-x-4">
+        {/* <div className="hidden md:flex items-center space-x-4">
           <input 
             type="text" 
             placeholder="Search..." 
@@ -27,7 +27,7 @@ const Navbar = () => {
           />
           <button className="bg-yellow-400 px-3 py-1 rounded-md hover:bg-yellow-500">Search</button>
           <a href="#" className="font-semibold hover:text-yellow-400">Account</a>
-        </div>
+        </div> */}
 
         {/* Mobile Menu Button */}
         <button 

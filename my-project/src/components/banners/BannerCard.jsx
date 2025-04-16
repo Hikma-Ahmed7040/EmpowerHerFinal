@@ -63,7 +63,7 @@ function BannerCard({ data, index }) {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Shop Now
+              See all 
             </motion.button>
           </motion.div>
         </motion.div>

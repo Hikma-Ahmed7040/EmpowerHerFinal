@@ -20,7 +20,7 @@ export const bannerData = [
     title: "Home Decor",
     name: "Home decor",
     imgLink:
-      "https://th.bing.com/th/id/R.4c0c5119818db8160bb2e69dab584145?rik=JZxprTNcKvWBBA&pid=ImgRaw&r=0",
+      "https://th.bing.com/th/id/OIP.Voq9qW_yuHmbTrjcbuPO7QHaLH?w=138&h=207&c=7&r=0&o=5&dpr=2.2&pid=1.7",
     rating: 4.3,
     accentColor: "#7F5E46" // Darker brown
   },

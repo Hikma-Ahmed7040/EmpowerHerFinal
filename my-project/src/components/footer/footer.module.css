@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Dancing+Script:wght@700&display=swap');
 .footer_outer_container {
   background-color: #5a3921;
@@ -17,10 +18,20 @@
   text-align: center;
 }
 
-.logo__container h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.logo__container h1 {  
   color: #F59E0B !important;
+  /* color: white; */
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+  transition: transform 0.3s ease;
+  font-family: 'Cinzel Decorative', 'Playfair Display', serif;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  padding: 0 10px;
 }
 
 .footer_icons {

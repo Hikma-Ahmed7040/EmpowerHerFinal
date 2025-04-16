@@ -10,7 +10,7 @@ const Hero = () => {
     'https://static.vecteezy.com/system/resources/previews/028/901/655/non_2x/of-emotional-dynamic-pose-african-woman-in-autumn-ai-generative-free-photo.jpg',
     'https://static.vecteezy.com/system/resources/previews/028/901/730/non_2x/of-emotional-dynamic-pose-african-woman-in-autumn-ai-generative-free-photo.jpg',
     'https://img.freepik.com/premium-photo/portrait-beautiful-african-woman-traditional-clothes-headscarf_977935-7841.jpg',
-    'https://www.shutterstock.com/image-photo/beauty-skincare-happiness-black-woman-600nw-2324699377.jpg'
+    'https://media.istockphoto.com/id/1277113035/photo/young-black-beauty-with-afro-hairstyle.jpg?s=170667a&w=0&k=20&c=OaHeq4LSgAMM1DfFN12CYWVDNfjMb8EgeScIescmajg='
   ];
 
   // Auto-rotate backgrounds

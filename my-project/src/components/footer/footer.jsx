@@ -14,20 +14,21 @@ function Footer() {
             <Link to="/">
               <h1>EmpowerHer</h1>
             </Link>
+            <p className={classes.tagline}>Empowering women through handmade art & creativity.</p>
           </div>
           <ul className={classes.footer_icons}>
             <li>
-              <a href="https://www.facebook.com/evangaditech" target="_blank" rel="noreferrer">
+              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                 <FaFacebook />
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/evangaditech/" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
                 <FaInstagram />
               </a>
             </li>
             <li>
-              <a href="https://www.youtube.com/@EvangadiTech" target="_blank" rel="noreferrer">
+              <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
                 <AiOutlineYoutube />
               </a>
             </li>
@@ -36,26 +37,27 @@ function Footer() {
 
         {/* Second Section */}
         <div className={classes.second_section}>
-          <h3>Useful Links</h3>
+          <h3>Explore</h3>
           <ul className={classes.lists}>
-            <li><Link to="/how-it-works">How it works</Link></li>
-            <li><Link to="/terms">Terms of Service</Link></li>
-            <li><Link to="/privacy">Privacy Policy</Link></li>
+            <li><Link to="/how-it-works">How EmpowerHer Works</Link></li>
+            <li><Link to="/stories">Success Stories</Link></li>
+            <li><Link to="/volunteer">Volunteer With Us</Link></li>
+            <li><Link to="/faq">FAQs</Link></li>
           </ul>
         </div>
 
         {/* Third Section */}
         <div className={classes.third_section}>
-          <h3>Contact Info</h3>
+          <h3>Contact</h3>
           <ul className={classes.lists}>
-            <li>Evangadi Networks</li>
-            <li><a href="mailto:support@evangadi.com">support@evangadi.com</a></li>
-            <li><a href="tel:+12023862702">+1-202-386-2702</a></li>
+            <li>EmpowerHer HQ</li>
+            <li><a href="mailto:support@empowerher.com">support@empowerher.com</a></li>
+            <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
           </ul>
         </div>
       </div>
-      
-      {/* Copyright Section */}
+
+      {/* Copyright */}
       <div className={classes.copyright}>
         <p>&copy; {new Date().getFullYear()} EmpowerHer. All rights reserved.</p>
       </div>
