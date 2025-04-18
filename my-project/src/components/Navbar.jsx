@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -52,7 +51,7 @@ const Navbar = () => {
               className="px-3 py-1 rounded-md text-black focus:outline-none"
             />
           </li>
-          <li><a href="#" className="hover:text-yellow-400">Account</a></li>
+          <li><a href="/" className="hover:text-yellow-400">Account</a></li>
         </ul>
       )}
     </nav>

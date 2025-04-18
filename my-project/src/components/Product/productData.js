@@ -9,6 +9,7 @@ const traditionalClothes = [
         category: "Traditional Clothes",
         rating: { rate: 4.8, count: 32 }
       },
+   
       {
         id: 2,
         title: "Habesha Kemis ",
@@ -289,6 +290,51 @@ const traditionalClothes = [
         description: "Opulent velvet kaftan with silver-thread embellishments for a regal look. (Morocco)",
         category: "Traditional Clothes",
         rating: { rate: 3.1, count: 96 }
+      },
+      {
+        id: 33,
+        title: "White Kemis (Netela Dress) ",
+        price: 45.99,
+        image: "https://i.pinimg.com/originals/3a/a2/04/3aa204f1013c48315516236f781d21e2.jpg",
+        description: "A simple, elegant white dress often made from cotton or chiffon, typically worn with a netela (shawl) for formal occasions.",
+        category: "Traditional Clothes",
+        rating: { rate: 4.8, count: 32 }
+      },
+      {
+        id: 34,
+        title: "Tibeb Kemis ",
+        price: 45.99,
+        image: "https://www.ethiopian.store/cdn/shop/files/il_fullxfull.4987848485_714j-696940.jpg?v=1716554758&width=990",
+        description: "Features intricate tibeb (embroidered patterns) along the hem, sleeves, or neckline, often in colorful designs.",
+        category: "Traditional Clothes",
+        rating: { rate: 4.8, count: 632 }
+      },
+      {
+        id: 35,
+        title: "Zuria Kemis ",
+        price: 45.99,
+        image: "https://i.pinimg.com/originals/14/4d/17/144d17f05fff89f741f547e0883117f2.jpg",
+        description: "Made from zuria fabric (sheer, lightweight cotton), usually white with delicate embroidery, popular for weddings and church events.",
+        category: "Traditional Clothes",
+        rating: { rate: 4.8, count: 632 }
+      },
+      {
+        id: 36,
+        title: "Silk Kemis ",
+        price: 45.99,
+        image: "https://th.bing.com/th/id/OIP.dARx5w5CITqeP4jmSCzFLgHaHa?rs=1&pid=ImgDetMain",
+        description: "Made from luxurious silk fabric, often worn for special occasions like weddings and holidays.",
+        category: "Traditional Clothes",
+        rating: { rate: 4.8, count: 632 }
+      },
+      {
+        id: 37,
+        title: "Daraa (Oromo Traditional Wear)",
+        price: 65.99,
+        image: "https://th.bing.com/th/id/OIP.lsD1GBNpbL53mBY0QNtbGgHaJu?rs=1&pid=ImgDetMain",
+        description: "Traditional Oromo attire, often made from cotton and adorned with colorful patterns, typically worn during cultural events.",
+        category: "Traditional Clothes",
+        rating: { rate: 4.8, count: 632 }
       },
 
       
@@ -742,6 +788,42 @@ const traditionalClothes = [
       rating: { rate: 4.7, count: 42 }
     },
     {
+      id: 73,
+      title: "African books store ",
+      price: 59.99,
+      image: "https://i.pinimg.com/originals/d2/fc/01/d2fc012df2440517c0a06387fc6206af.jpg",
+      description: "Recycled fabric stuffed with rice sacks",
+      category: "Home Decor",
+      rating: { rate: 4.7, count: 42 }
+    },
+    {
+      id: 73,
+      title: "Shema Cotton Throw Pillows",
+      price: 29.99,
+      image: "https://th.bing.com/th/id/OIP.r2CeS_klbJH8I9HkBZcP7gHaHa?rs=1&pid=ImgDetMain",
+      description: "Decorative pillows made from Ethiopian Shema (handwoven cotton fabric) featuring bold stripes and earthy tones for a cozy, cultural touch.",
+      category: "Home Decor",
+      rating: { rate: 4.7, count: 42 }
+    },
+    {
+      id: 73,
+      title: "Ethiopian Orthodox Cross Wall Art",
+      price: 29.99,
+      image: "https://th.bing.com/th/id/OIP.6uV9ZGk3pJ5zbSlaKl6rewHaJ4?w=2250&h=3000&rs=1&pid=ImgDetMain",
+      description: "Intricate Ethiopian Orthodox crosses made from wood or metal, hung as striking wall decor to showcase religious and artistic heritage.",
+      category: "Home Decor",
+      rating: { rate: 4.7, count: 42 }
+    },
+    {
+      id: 73,
+      title: "Ethiopian Orthodox Cross Wall Art",
+      price: 29.99,
+      image: "https://th.bing.com/th/id/OIP.zfe5iWPtsHJLGfHaBnHenQHaE8?rs=1&pid=ImgDetMain",
+      description: "Intricate Ethiopian Orthodox crosses made from wood or metal, hung as striking wall decor to showcase religious and artistic heritage.",
+      category: "Home Decor",
+      rating: { rate: 4.7, count: 42 }
+    },
+    {
       id: 75,
       title: "Dogon Door Locker",
       price: 89.99,
@@ -959,6 +1041,9 @@ const traditionalClothes = [
     }
 ];
     
+
+
+
 
     
     export default [
