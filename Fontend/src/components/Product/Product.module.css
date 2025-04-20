@@ -169,7 +169,17 @@
   opacity: 1;
   transform: scale(1);
 }
-
+.loadMoreButton {
+  padding: 12px 24px;
+  background-color: #d69760;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 /* Fullscreen Modal Styles */
 .fullscreen_modal {
   display: none;
@@ -255,6 +265,7 @@
   outline: 2px dashed #dbb612;
   outline-offset: 4px;
 }
+
 
 /* Responsive Modal Adjustments */
 @media (max-width: 600px) {

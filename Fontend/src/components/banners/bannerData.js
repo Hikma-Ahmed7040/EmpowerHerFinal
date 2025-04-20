@@ -1,7 +1,7 @@
 export const bannerData = [
   {
     title: "Traditional Clothes",
-    name: "clothes",
+    name: "traditional-clothes",
     imgLink:
       "https://th.bing.com/th/id/OIP.2uieGLO_1Sp0COXP1xtEowAAAA?rs=1&pid=ImgDetMain",
     rating: 4.5,
@@ -18,7 +18,7 @@ export const bannerData = [
   
   {
     title: "Home Decor",
-    name: "homedecor",
+    name: "home-decor",
     imgLink:
       "https://th.bing.com/th/id/OIP.Voq9qW_yuHmbTrjcbuPO7QHaLH?w=138&h=207&c=7&r=0&o=5&dpr=2.2&pid=1.7",
     rating: 4.3,

@@ -1,18 +1,22 @@
+// src/components/banners/Banner.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import { bannerData } from "./bannerData";
 import classes from "./banner.module.css";
 import BannerCard from "./BannerCard";
 
-function Banner() {
+export default function Banner() {
   return (
     <div className={classes.bannerContainer}>
       {bannerData.map((info) => (
-        <div key={info.name} className={classes.bannerItem}>
+        <Link
+          key={info.name}
+          to={`/banner/${info.name}`}
+          className={classes.bannerItem}
+        >
           <BannerCard data={info} />
-        </div>
+        </Link>
       ))}
     </div>
   );
 }
-
-export default Banner;

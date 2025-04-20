@@ -1,61 +1,39 @@
-// src/Results/Result.jsx
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import LayOut from '../../components/Layout/LayOut';
+// src/pages/Results/Result.jsx
+import React from "react";
+import { useParams } from "react-router-dom";
+import allProducts from "../../components/Product/productData";
+import ProductCard from "../../components/Product/ProductCard";
+import classes from "../../components/Product/Product.module.css";
 
-import {
-  traditionalClothes,
-  skincareProducts,
-  homeDecorProducts,
-  handmadeAccessories,
-} from '../../components/Product/productData';
+// Helper to turn a string into a slug
+const makeSlug = (str) =>
+  str.toLowerCase().trim().replace(/\s+/g, "-").replace(/[^\w-]/g, "");
 
-function Result() {
-  const [results, setResults] = useState([]);
-  const { BannerName } = useParams();
-  console.log("URL BannerName:")
+export default function Result() {
+  const { bannerName } = useParams();
 
-  useEffect(() => {
-    let data = [];
+  // Filter products whose category matches the bannerName (as slug)
+  const productsToShow = allProducts.filter(
+    (p) => makeSlug(p.category) === bannerName
+  );
 
-    switch (BannerName.toLowerCase()) {
-      case 'clothes':
-        data = traditionalClothes;
-        break;
-      case 'skincare':
-        data = skincareProducts;
-        break;
-      case 'homedecor':
-        data = homeDecorProducts;
-        break;
-      case 'handmade-accessories':
-        data = handmadeAccessories;
-        break;
-      default:
-        data = [];
-    }
-
-    setResults(data);
-  }, [BannerName]);
+  if (productsToShow.length === 0) {
+    return (
+      <section className={classes.product_container}>
+        <p>No products found for “{bannerName}”.</p>
+      </section>
+    );
+  }
 
   return (
-    <>
-      <LayOut />
-      <div style={{ padding: '20px' }}>
-        <h2>{BannerName.replace('-', ' ')}</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '20px' }}>
-          {results.map((product) => (
-            <div key={product.id} style={{ border: '1px solid #ccc', padding: '10px', borderRadius: '8px' }}>
-              <img src={product.image} alt={product.title} style={{ width: '100%', height: '150px', objectFit: 'cover' }} />
-              <h4>{product.title}</h4>
-              <p>{product.description}</p>
-              <p><strong>${product.price}</strong></p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </>
+    <section className={classes.product_container}>
+      {productsToShow.map((product, index) => (
+        <ProductCard
+          key={product.id}
+          product={product}
+          style={{ animationDelay: `${index * 0.1}s` }}
+        />
+      ))}
+    </section>
   );
 }
-
-export default Result;
