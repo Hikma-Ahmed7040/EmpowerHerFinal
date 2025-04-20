@@ -343,7 +343,7 @@ const traditionalClothes = [
     
     const handmadeAccessories = [
       {
-        id: 33,
+        id: 38,
         title: "Maasai Beaded Bracelet",
         price: 15.9,
         image: "https://i.etsystatic.com/11307854/r/il/15715e/2130072823/il_fullxfull.2130072823_8p5s.jpg",
@@ -352,7 +352,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 34,
+        id: 39,
         title: "Hamar Tribe Earrings",
         price: 10.99,
         image: "https://th.bing.com/th/id/OIP.DNZPD65LYrIOilJ3GQzA1AHaHa?w=213&h=213&c=7&r=0&o=5&dpr=1.9&pid=1.7",
@@ -361,7 +361,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 35,
+        id: 40,
         title: "Shea Butter Hair Comb",
         price: 15,
         image: "https://th.bing.com/th/id/OIP._giUYIIskVi5cPxD58WwnQAAAA?rs=1&pid=ImgDetMain",
@@ -370,7 +370,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 36,
+        id: 41,
         title: "basketry clutch",
         price: 18.99,
         image: "https://th.bing.com/th/id/R.b99ba6d9af8d2232adc93e5c8b727c8e?rik=bN9yrhvDF60FNA&riu=http%3a%2f%2fhabeshabazaar.com%2fcdn%2fshop%2ffiles%2fWhatsAppImage2023-11-17at22.57.55_3612cab1.jpg%3fv%3d1700567016&ehk=Rl%2bMpUtEADejwb59gKLhzIK1jV5sghfFmi4SKouHl%2fA%3d&risl=&pid=ImgRaw&r=0",
@@ -379,7 +379,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 37,
+        id: 42,
         title: "ethiopian silver ring",
         price: 19.99,
         image: "https://th.bing.com/th/id/OIP.Rj0Z49E-ScS1PMU2X7Xr9wHaJ1?rs=1&pid=ImgDetMain",
@@ -388,7 +388,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 38,
+        id: 43,
         title: "cofee bean necklace",
         price: 23.88,
         image: "https://th.bing.com/th/id/OIP.uPVKjzOREAExkjMTDcDwBgHaFj?rs=1&pid=ImgDetMain",
@@ -397,7 +397,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 39,
+        id: 44,
         title: "lalibela cross pendant",
         price: 16.99,
         image: "https://th.bing.com/th/id/OIP.TDMRT00o9Bf6_V3pID-6ngHaHa?rs=1&pid=ImgDetMain",
@@ -406,7 +406,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 40,
+        id: 45,
         title: "tribal arm cuff",
         price: 15.9,
         image: "https://www.ethnicjewelsmagazine.co.uk/wp-content/uploads/2020/10/17904084_1360108810699786_2824512477578044137_n-450x450.jpg",
@@ -415,7 +415,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 41,
+        id: 46,
         title: "enset fiber bag",
         price: 15.9,
         image: "https://th.bing.com/th/id/OIP.4lW30TAsU4okOTsaE1GtjwHaHa?rs=1&pid=ImgDetMain",
@@ -424,7 +424,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 42,
+        id: 47,
         title: "amhara coin necklace",
         price: 15.9,
         image: "https://th.bing.com/th/id/OIP.vemw47jQP4tccpV9bewnUgAAAA?w=175&h=180&c=7&r=0&o=5&dpr=1.9&pid=1.7",
@@ -433,7 +433,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 43,
+        id: 48,
         title: "oromo warrior bracelet",
         price: 15.9,
         image: "https://th.bing.com/th/id/OIP.__4VpgG9kylLZr1G_TPvjwHaE8?rs=1&pid=ImgDetMain",
@@ -442,7 +442,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 44,
+        id: 49,
         title: "Afar Desert Scarf Ring ",
         price: 15.9,
         image: "https://th.bing.com/th/id/OIP.3JgT7pfwtwaYIE1ObPmxJQHaHa?rs=1&pid=ImgDetMain",
@@ -451,7 +451,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 45,
+        id: 50,
         title: "Addis Ababa Silk Headwrap",
         price: 15.9,
         image: "https://th.bing.com/th/id/R.f87026a7bf899426fae19831d334400c?rik=JPuo0Blj09wUcQ&pid=ImgRaw&r=0",
@@ -460,7 +460,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 46,
+        id: 51,
         title: "Karo Tribe Lip Plate",
         price: 15.9,
         image: "https://th.bing.com/th/id/OIP.N7V4ZExT_ecm9hX8noUXUgHaFZ?rs=1&pid=ImgDetMain",
@@ -469,7 +469,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 47,
+        id: 52,
         title: "Handwoven Cotton Tote",
         price: 15.9,
         image: "https://www.bing.com/th/id/OIP.uoUYgsleyipEg27Ak9vHfgHaJ4?w=150&h=200&c=8&rs=1&qlt=90&o=6&dpr=1.9&pid=3.1&rm=2",
@@ -478,7 +478,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 48,
+        id: 53,
         title: "Gondar Royal Cufflinks",
         price: 15.9,
         image: "https://i.etsystatic.com/46456705/r/il/5616a4/5329804261/il_300x300.5329804261_q379.jpg",
@@ -487,7 +487,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 49,
+        id: 54,
         title: "Bale Mountains Wool Gloves",
         price: 15.9,
         image: "https://th.bing.com/th/id/OIP.9LJG0m-fMa8ycszhbMOPxQHaFz?rs=1&pid=ImgDetMain",
@@ -496,7 +496,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 50,
+        id: 55,
         title: "Harari Embroidered Wallet",
         price: 15.9,
         image: "https://th.bing.com/th/id/OIP.XEljwj_LUv2WYvNQrx4dkAHaGm?w=3000&h=2676&rs=1&pid=ImgDetMain",
@@ -504,17 +504,9 @@ const traditionalClothes = [
         category: "Handmade Accessories",
         rating: { rate: 4.9, count: 67 }
       },
+  
       {
-        id: 51,
-        title: "Coffee Ceremony Bracelet",
-        price: 15.9,
-        image: "https://th.bing.com/th/id/OIP.dmyUg7u0v2r9P2NJw0BlFQHaFi?w=289&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.9&pid=3.1&rm=2",
-        description: "Beads resembling coffee cherries.",
-        category: "Handmade Accessories",
-        rating: { rate: 4.9, count: 67 }
-      },
-      {
-        id: 52,
+        id: 56,
         title: "Tigrayan Silver Anklet",
         price: 15.9,
         image: "https://www.bing.com/th/id/OIP.VxQpY47hkB1xyfTvrkj9YAHaJz?w=150&h=198&c=8&rs=1&qlt=90&o=6&dpr=1.9&pid=3.1&rm=2",
@@ -523,7 +515,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 53,
+        id: 57,
         title: "Konso Wooden Hairpin",
         price: 15.9,
         image: "https://th.bing.com/th/id/OIP.Wl4NG-DzenkO7ukcW5pZPAHaHa?rs=1&pid=ImgDetMain",
@@ -532,7 +524,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 54,
+        id: 58,
         title: "Shepherds Leather Satchel",
         price: 15.9,
         image: "https://th.bing.com/th/id/OIP.ecdY6qL57ooRpBPjlzANxgHaJX?rs=1&pid=ImgDetMain",
@@ -541,7 +533,7 @@ const traditionalClothes = [
         rating: { rate: 4.9, count: 67 }
       },
       {
-        id: 55,
+        id: 59,
         title: "Blue Nile Stone Earrings",
         price: 15.9,
         image: "https://th.bing.com/th/id/OIP.cLtR6NoiVlJN3mXqBfdb-gHaHa?w=178&h=180&c=7&r=0&o=5&dpr=1.9&pid=1.7",
@@ -549,17 +541,9 @@ const traditionalClothes = [
         category: "Handmade Accessories",
         rating: { rate: 4.9, count: 67 }
       },
+     
       {
-        id: 51,
-        title: "Coffee Ceremony Bracelet",
-        price: 15.9,
-        image: "https://th.bing.com/th/id/OIP.dmyUg7u0v2r9P2NJw0BlFQHaFi?w=289&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.9&pid=3.1&rm=2",
-        description: "Beads resembling coffee cherries.",
-        category: "Handmade Accessories",
-        rating: { rate: 4.9, count: 67 }
-      },
-      {
-        id: 51,
+        id: 60,
         title: "Coffee Ceremony Bracelet",
         price: 15.9,
         image: "https://th.bing.com/th/id/OIP.dmyUg7u0v2r9P2NJw0BlFQHaFi?w=289&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.9&pid=3.1&rm=2",
@@ -574,7 +558,7 @@ const traditionalClothes = [
     
     const skincareProducts = [
       {
-        id: 52,
+        id: 61,
         title: "Abyssinian Oil Hair Serum ",
         price: 78.99,
         image: "https://th.bing.com/th/id/OIP.d5EmkZzlTrjhXiaf8xXKoAHaHa?rs=1&pid=ImgDetMain",
@@ -583,7 +567,7 @@ const traditionalClothes = [
         rating: { rate: 4.8, count: 89 }
       },
       {
-        id: 53,
+        id: 62,
         title: "Organic Ethiopian Honey Soap ",
         price: 10.00,
         image: "https://4.imimg.com/data4/TS/FV/MY-1600115/honey-soap-250x250.jpg",
@@ -592,7 +576,7 @@ const traditionalClothes = [
         rating: { rate: 2.8, count: 89 }
       },
       {
-        id: 54,
+        id: 63,
         title: "Korerima (Black Pepper) Scrub ",
         price: 30.00,
         image: "https://m.media-amazon.com/images/I/71mf-IabFvL._SY741_.jpg",
@@ -601,7 +585,7 @@ const traditionalClothes = [
         rating: { rate: 4.1, count: 89 }
       },
       {
-        id: 55,
+        id: 64,
         title: "Gesho Leaf Face Toner ",
         price: 30.00,
         image: "https://i.etsystatic.com/27460682/r/il/672d50/4289867190/il_340x270.4289867190_qpia.jpg",
@@ -610,7 +594,7 @@ const traditionalClothes = [
         rating: { rate: 4.1, count: 489 }
       },
       {
-        id: 56,
+        id: 65,
         title: "Tikur Azmud (Black Cumin) Oil ",
         price: 30.00,
         image: "https://m.media-amazon.com/images/I/71v5-1RP4-L._SY741_.jpg",
@@ -619,7 +603,7 @@ const traditionalClothes = [
         rating: { rate: 5.1, count: 89 }
       },
       {
-        id: 57,
+        id: 66,
         title: "Kibe (Clarified Butter) Hand Cream ",
         price: 40.00,
         image: "https://www.daringgourmet.com/wp-content/uploads/2018/04/Niter-Kibbeh-7-cropped.jpg",
@@ -628,7 +612,7 @@ const traditionalClothes = [
         rating: { rate: 4.1, count: 89 }
       },
       {
-        id: 58,
+        id: 67,
         title: "Wanza (Sandalwood) Beard Oil",
         price: 30.00,
         image: "https://th.bing.com/th/id/OIP.K72rRlN8ZKO2lay43R04OgHaFj?rs=1&pid=ImgDetMain",
@@ -637,7 +621,7 @@ const traditionalClothes = [
         rating: { rate: 3.1, count: 89 }
       },
       {
-        id: 59,
+        id: 68,
         title: "Tena Adam (Health Plant) Lotion ",
         price: 32.00,
         image: "https://shop.birlin-muehle.de/out/pictures/generated/product/2/665_665_75/habesha-food-tena-adam-_mg_124791.jpg",
@@ -646,7 +630,7 @@ const traditionalClothes = [
         rating: { rate: 4.1, count: 89 }
       },
       {
-        id: 60,
+        id: 69,
         title: "Rooibos & Hibiscus Toner",
         price: 35.90,
         image: "https://th.bing.com/th/id/OIP.TOnBi75kqxE2mJPZDZyKRQHaHa?rs=1&pid=ImgDetMain",
@@ -655,7 +639,7 @@ const traditionalClothes = [
         rating: { rate: 4.1, count: 89 }
       },
       {
-        id: 61,
+        id: 70,
         title: "Neem & Mint Toothpowder",
         price: 36.00,
         image: "https://th.bing.com/th/id/OIP.ha_hUKUHT_DWP-dpJEh46QAAAA?rs=1&pid=ImgDetMain",
@@ -664,7 +648,7 @@ const traditionalClothes = [
         rating: { rate: 3.1, count: 89 }
       },
       {
-        id: 62,
+        id: 71,
         title: "Marula Oil Serum (Southern Africa)",
         price: 37.00,
         image: "https://africanbotanics.com/cdn/shop/files/PURE_MARULA_OIL_Image_2_eaf96945-595a-42d1-97a2-650827cd536a.jpg?v=1715312766&width=3840",
@@ -673,7 +657,7 @@ const traditionalClothes = [
         rating: { rate: 4.45, count: 89 }
       },
       {
-        id: 63,
+        id: 72,
         title: "Dakar Black Soap (Senegal) ",
         price: 300.00,
         image: "https://fabellashop.com/wp-content/uploads/2017/04/shea-moisture-african-black-soap.jpg",
@@ -682,7 +666,7 @@ const traditionalClothes = [
         rating: { rate: 3.1, count: 89 }
       },
       {
-        id: 64,
+        id: 73,
         title: "Kalahari Melon Seed Oil",
         price: 41.00,
         image: "https://th.bing.com/th/id/OIP.zMjsHn1_PaR_j7C86BqxaAHaLG?rs=1&pid=ImgDetMain",
@@ -691,7 +675,7 @@ const traditionalClothes = [
         rating: { rate: 4.1, count: 89 }
       },
       {
-        id: 65,
+        id: 74,
         title: "Botswana Devil’s Claw Salve ",
         price: 80.99,
         image: "https://th.bing.com/th/id/OIP.JeO1mYeKunguURhCRC_9WQHaHa?w=181&h=181&c=7&r=0&o=5&dpr=1.9&pid=1.7",
@@ -700,7 +684,7 @@ const traditionalClothes = [
         rating: { rate: 4.1, count: 89 }
       },
       {
-        id: 66,
+        id: 75,
         title: "Nigerian Neem & Tumeric Soap",
         price: 67.00,
         image: "https://th.bing.com/th/id/OIP.peYgIOZmUHmXQXLmqWgK0wHaHa?rs=1&pid=ImgDetMain",
@@ -709,7 +693,7 @@ const traditionalClothes = [
         rating: { rate: 4.2, count: 869 }
       },
       {
-        id: 67,
+        id: 76,
         title: "Congolese Coffee Body Scrub ",
         price: 30.00,
         image: "https://th.bing.com/th/id/OIP.lkTnS4_hB56ocW6Cfho9ugHaHa?w=1080&h=1080&rs=1&pid=ImgDetMain",
@@ -718,7 +702,7 @@ const traditionalClothes = [
         rating: { rate: 3.8, count: 189 }
       },
       {
-        id: 68,
+        id: 77,
         title: "Fulani Hair Growth Oil",
         price: 30.00,
         image: "https://th.bing.com/th/id/OIP.Ywzc2aT4-P8_Dx36FC2YNQAAAA?rs=1&pid=ImgDetMain",
@@ -727,7 +711,7 @@ const traditionalClothes = [
         rating: { rate: 3.1, count: 459 }
       },
       {
-        id: 69,
+        id: 78,
         title: "San Bushman Camelthorn Gum Balm",
         price: 30.00,
         image: "https://th.bing.com/th/id/OIP.5DrHFIK6j3vP8XMm58mLwAHaHa?w=177&h=180&c=7&r=0&o=5&dpr=1.9&pid=1.7",
@@ -736,7 +720,7 @@ const traditionalClothes = [
         rating: { rate: 3.1, count: 289 }
       },
       {
-        id: 70,
+        id: 79,
         title: "Saharan Rosehip Oil",
         price: 120.00,
         image: "https://th.bing.com/th/id/OIP.atLWrU28Hu90L55rJS-PnwHaKG?rs=1&pid=ImgDetMain",
@@ -745,7 +729,7 @@ const traditionalClothes = [
         rating: { rate: 4.1, count: 89 }
       },
       {
-        id: 71,
+        id: 80,
         title: "Maasai Emblica Hair Rinse ",
         price: 36.00,
         image: "https://www.origine-naturelle.com/media/catalog/product/cache/c479f996ec68bda962bbb795b8f9f656/_/e/_e_m_emblica_1.jpg",
@@ -754,7 +738,7 @@ const traditionalClothes = [
         rating: { rate: 4.1, count: 89 }
       },
       {
-        id: 72,
+        id: 81,
         title: "Libyan Date Seed Polisher ",
         price: 20.99,
         image: "https://th.bing.com/th/id/OIP.oMX916yxjjQuj19x0e3qZgHaGL?rs=1&pid=ImgDetMain",
@@ -763,7 +747,7 @@ const traditionalClothes = [
         rating: { rate: 3.1, count: 369 }
       },
       {
-        id: 73,
+        id: 82,
         title: "Tunisian Orange Blossom Water ",
         price: 30.00,
         image: "https://flikkymarket.ca/wp-content/uploads/2022/01/Rose_Water_250mL_Minar_695x695.png",
@@ -779,7 +763,7 @@ const traditionalClothes = [
     const homeDecorProducts = [
 
     {
-      id: 74,
+      id: 83,
       title: "Senegalese Floor Pouf",
       price: 59.99,
       image: "https://th.bing.com/th/id/OIP.BPnbbR_QnaMwx_1JaX3QJAHaJU?rs=1&pid=ImgDetMain",
@@ -788,7 +772,7 @@ const traditionalClothes = [
       rating: { rate: 4.7, count: 42 }
     },
     {
-      id: 73,
+      id: 84,
       title: "African books store ",
       price: 59.99,
       image: "https://i.pinimg.com/originals/d2/fc/01/d2fc012df2440517c0a06387fc6206af.jpg",
@@ -797,7 +781,7 @@ const traditionalClothes = [
       rating: { rate: 4.7, count: 42 }
     },
     {
-      id: 73,
+      id: 85,
       title: "Shema Cotton Throw Pillows",
       price: 29.99,
       image: "https://th.bing.com/th/id/OIP.r2CeS_klbJH8I9HkBZcP7gHaHa?rs=1&pid=ImgDetMain",
@@ -806,7 +790,7 @@ const traditionalClothes = [
       rating: { rate: 4.7, count: 42 }
     },
     {
-      id: 73,
+      id: 86,
       title: "Ethiopian Orthodox Cross Wall Art",
       price: 29.99,
       image: "https://th.bing.com/th/id/OIP.6uV9ZGk3pJ5zbSlaKl6rewHaJ4?w=2250&h=3000&rs=1&pid=ImgDetMain",
@@ -815,7 +799,7 @@ const traditionalClothes = [
       rating: { rate: 4.7, count: 42 }
     },
     {
-      id: 73,
+      id: 87,
       title: "Ethiopian Orthodox Cross Wall Art",
       price: 29.99,
       image: "https://th.bing.com/th/id/OIP.zfe5iWPtsHJLGfHaBnHenQHaE8?rs=1&pid=ImgDetMain",
@@ -824,7 +808,7 @@ const traditionalClothes = [
       rating: { rate: 4.7, count: 42 }
     },
     {
-      id: 75,
+      id: 88,
       title: "Dogon Door Locker",
       price: 89.99,
       image: "https://th.bing.com/th/id/OIP.6q8E8eoKzit7vpxxFbgB6gHaLI?rs=1&pid=ImgDetMain",
@@ -833,7 +817,7 @@ const traditionalClothes = [
       rating: { rate: 4.9, count: 18 }
     },
     {
-      id: 76,
+      id: 89,
       title: "Zulu Beer Pot",
       price: 45.50,
       image: "https://a.1stdibscdn.com/20th-century-zulu-beer-pot-for-sale-picture-2/f_37383/f_174710221578270248174/Zulu_Beer_Pot_2_master.jpg?width=768",
@@ -842,7 +826,7 @@ const traditionalClothes = [
       rating: { rate: 4.8, count: 31 }
     },
     {
-      id: 77,
+      id: 90,
       title: "Adinkra Symbol Stool",
       price: 120.00,
       image: "https://th.bing.com/th/id/OIP.8OJc5wKTkppTHJND1lMcYAHaI6?w=1958&h=2357&rs=1&pid=ImgDetMain",
@@ -851,7 +835,7 @@ const traditionalClothes = [
       rating: { rate: 5.0, count: 27 }
     },
     {
-      id: 78,
+      id: 91,
       title: "Tuareg Camel Bell",
       price: 35.75,
       image: "https://c8.alamy.com/comp/ATHFGK/in-gall-near-agadez-niger-tuareg-camel-decorations-ATHFGK.jpg",
@@ -860,7 +844,7 @@ const traditionalClothes = [
       rating: { rate: 4.6, count: 39 }
     },
     {
-      id: 79,
+      id: 92,
       title: "Kuba Textile Wall Hanging",
       price: 79.99,
       image: "https://th.bing.com/th/id/OIP.SV6sLUDHsxW_Durmg-9T_gHaLG?rs=1&pid=ImgDetMain",
@@ -869,7 +853,7 @@ const traditionalClothes = [
       rating: { rate: 4.9, count: 22 }
     },
     {
-      id: 80,
+      id: 93,
       title: "Moroccan Zellige Tile Coasters",
       price: 24.99,
       image: "https://media.printables.com/media/prints/231263/images/2102990_15f2c5df-0172-42f6-b83d-88becfce3f2d/img_4894.jpg",
@@ -878,7 +862,7 @@ const traditionalClothes = [
       rating: { rate: 4.5, count: 67 }
     },
     {
-      id: 81,
+      id: 94,
       title: "Maasai Warrior Shield Clock",
       price: 65.00,
       image: "https://img.carters.com.au/cf907d37c5098edd025dded5a985d195.jpg",
@@ -887,7 +871,7 @@ const traditionalClothes = [
       rating: { rate: 4.7, count: 35 }
     },
     {
-      id: 82,
+      id: 95,
       title: "Yoruba Ifa Divination Tray",
       price: 95.50,
       image: "https://th.bing.com/th/id/OIP.jsvF4oJrgFMljV-9LYvEyQHaJ4?w=2244&h=2992&rs=1&pid=ImgDetMain",
@@ -896,7 +880,7 @@ const traditionalClothes = [
       rating: { rate: 4.8, count: 19 }
     },
     {
-      id: 83,
+      id: 96,
       title: "San Rock Art Print",
       price: 29.99,
       image: "https://c8.alamy.com/comp/2K1CAMT/cave-painting-linton-panel-is-one-of-the-most-amazing-and-finely-detailed-examples-of-san-rock-art-from-southern-africa-south-african-national-2K1CAMT.jpg",
@@ -905,7 +889,7 @@ const traditionalClothes = [
       rating: { rate: 4.4, count: 53 }
     },
     {
-      id: 11,
+      id: 97,
       title: "Fulani Milk Gourd",
       price: 42.00,
       image: "https://2.bp.blogspot.com/-AySZ-oO4sGc/WYWCQ6CUNII/AAAAAAAABC4/uNzuIMgAhXkERjELAubcstYfskZK6rucQCLcBGAs/s1600/gourde5.jpg",
@@ -914,7 +898,7 @@ const traditionalClothes = [
       rating: { rate: 4.6, count: 28 }
     },
     {
-      id: 12,
+      id: 98,
       title: "Swahili Lamu Lantern",
       price: 55.00,
       image: "https://th.bing.com/th/id/R.ab70ccd00162a84ecffc5b3cb2efe8a4?rik=vBT%2bG2N0WCpKUQ&riu=http%3a%2f%2fwww.palmyradesign.com%2fphotos%2fPD14_pyr_alk.jpg&ehk=QcYcwAD%2fJ5Hei3a%2fJ7xphw1o88ucdBLb%2b2W8hj8EO1s%3d&risl=&pid=ImgRaw&r=0",
@@ -923,7 +907,7 @@ const traditionalClothes = [
       rating: { rate: 4.9, count: 41 }
     },
     {
-      id: 13,
+      id: 99,
       title: "Bamileke Throne Chair",
       price: 199.99,
       image: "https://i.pinimg.com/736x/d4/39/8c/d4398c4d6e47425bdd544f27a2a80d41.jpg",
@@ -932,7 +916,7 @@ const traditionalClothes = [
       rating: { rate: 5.0, count: 12 }
     },
     {
-      id: 14,
+      id: 100,
       title: "Ashanti Golden Stool Art Piece",
       price: 149.99,
       image: "https://th.bing.com/th/id/OIP.dVaubFyfBV8E-ST8On3eNwHaHa?rs=1&pid=ImgDetMain",
@@ -941,7 +925,7 @@ const traditionalClothes = [
       rating: { rate: 4.9, count: 8 }
     },
     {
-      id: 15,
+      id: 101,
       title: "Berber Wool Rug",
       price: 249.99,
       image: "https://www.trendcarpet.co.uk/images/zoom/interior_4_1.4_1152343454_dream.dhc-02-18.ivorydesign.jpg",
@@ -950,7 +934,7 @@ const traditionalClothes = [
       rating: { rate: 4.8, count: 17 }
     },
     {
-      id: 16,
+      id: 102,
       title: "Nubian Woven Table Mat",
       price: 32.50,
       image: "https://images.squarespace-cdn.com/content/v1/6100be0a1879fd760ac18d59/1628436357753-J45LK7EDS4A4EFDS0L6Z/Riad_Rooftop_In_Marrakech.jpg?format=1000w",
@@ -959,7 +943,7 @@ const traditionalClothes = [
       rating: { rate: 4.5, count: 39 }
     },
     {
-      id: 17,
+      id: 103,
       title: "Hausa Mudcloth Pillow",
       price: 45.99,
       image: "https://i.etsystatic.com/13846810/r/il/3bac3d/1464491926/il_fullxfull.1464491926_ghon.jpg",
@@ -968,7 +952,7 @@ const traditionalClothes = [
       rating: { rate: 4.7, count: 29 }
     },
     {
-      id: 18,
+      id: 104,
       title: "Xhosa Beaded Curtain",
       price: 89.99,
       image: "https://th.bing.com/th/id/OIP.h9nHAF5aP1REPenJkrnMNAHaLH?rs=1&pid=ImgDetMain",
@@ -977,7 +961,7 @@ const traditionalClothes = [
       rating: { rate: 4.6, count: 21 }
     },
     {
-      id: 19,
+      id: 105,
       title: "Libyan Desert Rose Crystal",
       price: 39.99,
       image: "https://flamboyantdiani.com/wp-content/uploads/2023/06/Indulge-in-leisurely-conversations-or-curl-up-with-a-good-book-in-our-inviting-sitting-room-designed-for-ultimate-comfort-scaled.jpg",
@@ -986,7 +970,7 @@ const traditionalClothes = [
       rating: { rate: 4.8, count: 47 }
     },
     {
-      id: 20,
+      id: 106,
       title: "Kikuyu Honey Pot",
       price: 37.50,
       image: "https://th.bing.com/th/id/OIP.6_GWiUmGbUgSQy-7x4tRJAHaGC?rs=1&pid=ImgDetMain",
@@ -995,7 +979,7 @@ const traditionalClothes = [
       rating: { rate: 4.5, count: 33 }
     },
     {
-      id: 21,
+      id: 107,
       title: "Chokwe Storytelling Mask",
       price: 79.99,
       image: "https://i.ebayimg.com/images/g/yvYAAOSw~JZhzQsO/s-l1600.jpg",
@@ -1004,16 +988,16 @@ const traditionalClothes = [
       rating: { rate: 4.7, count: 19 }
     },
     {
-      id: 22,
+      id: 108,
       title: "Timbuktu Manuscript Frame",
-      price: 49.99,
+      price: 499.99,
       image: "https://th.bing.com/th/id/OIP.-wwFY1tfFMPqHK_u1rF46wHaEh?w=266&h=180&c=7&r=0&o=5&dpr=1.9&pid=1.7",
       description: "Reproduction of ancient text from Mali",
       category: "Home Decor",
       rating: { rate: 4.9, count: 26 }
     },
     {
-      id: 23,
+      id: 109,
       title: "Wodaabe Mirror Mosaic",
       price: 65.00,
       image: "https://i.etsystatic.com/25967253/r/il/914f54/3635905167/il_570xN.3635905167_4roj.jpg",
@@ -1022,7 +1006,7 @@ const traditionalClothes = [
       rating: { rate: 4.6, count: 14 }
     },
     {
-      id: 24,
+      id: 110,
       title: "Pondo Grass Broom",
       price: 22.99,
       image: "https://i.pinimg.com/originals/88/18/db/8818dbe9976819f602d7ce0870194885.jpg",
@@ -1031,7 +1015,7 @@ const traditionalClothes = [
       rating: { rate: 4.3, count: 58 }
     },
     {
-      id: 25,
+      id: 111,
       title: "Fante Fishing Net Hammock",
       price: 129.99,
       image: "https://ae01.alicdn.com/kf/S108195f1f53040e4ac5b85874d4d323eS/Fishing-Net-Decoration-Beach-Themed-Pirate-Party-Hawaiian-Party-Wall-Hanging-Fishing-Net-Home-Decor-Photography.jpg",
@@ -1040,15 +1024,13 @@ const traditionalClothes = [
       rating: { rate: 4.8, count: 23 }
     }
 ];
-    
-
-
-
-
-    
-    export default [
+        
+    const allProducts= [
       ...traditionalClothes,
       ...handmadeAccessories,
       ...skincareProducts,
       ...homeDecorProducts
     ];
+
+    export default allProducts;
+    export { traditionalClothes, handmadeAccessories, skincareProducts, homeDecorProducts };
