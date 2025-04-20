@@ -1,12 +1,12 @@
 import React from "react";
-// import styles from "./App.module.css"; // Corrected import
 import Routing from "./components/Router";
-
+import { CartProvider } from "./components/CartContext"; // Make sure path is correct
 
 function App() {
-  return ( 
+  return (
+    <CartProvider>
       <Routing />
-   
+    </CartProvider>
   );
 }
 

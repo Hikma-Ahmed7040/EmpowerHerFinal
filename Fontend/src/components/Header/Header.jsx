@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+// src/components/Header.jsx
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { BiCart } from 'react-icons/bi';
+
 import {
   GiClothes,
   GiNecklace,
   GiWoodenChair,
   GiSoap
 } from 'react-icons/gi';
-import classes from "./Header.module.css";
+
+import { CartContext } from '../CartContext'; // correct import
+import classes from './Header.module.css';
 
 const navItems = [
   { icon: GiClothes, text: "Traditional Clothes" },
@@ -18,6 +22,7 @@ const navItems = [
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { cartItems } = useContext(CartContext); // fix here
 
   return (
     <section className={classes.fixed}>
@@ -51,7 +56,7 @@ function Header() {
             </Link>
             <Link to="/cart" className={classes.cart}>
               <BiCart size={35} />
-              <span>0</span>
+              <span>{cartItems.length}</span> {/* Show item count */}
             </Link>
           </div>
 
