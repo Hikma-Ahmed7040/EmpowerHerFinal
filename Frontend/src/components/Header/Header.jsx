@@ -2,6 +2,7 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { BiCart } from 'react-icons/bi';
+import { DataContext} from '../DataProvider/DataProvider'
 
 import {
   GiClothes,
@@ -20,9 +21,15 @@ const navItems = [
   { icon: GiSoap, text: "Skincare Products" }
 ];
 
+
+
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { cartItems } = useContext(CartContext); // fix here
+  const [{basket},dispatch] = useContext(DataContext)
+  console.log(basket.length)
+
+
 
   return (
     <section className={classes.fixed}>
@@ -31,7 +38,7 @@ function Header() {
         <div className={classes.logo__container}>
           <Link to="/">
             <h1>EmpowerHer</h1>
-          </Link>
+          </Link> 
         </div>
 
         {/* Desktop Navigation */}
@@ -56,7 +63,7 @@ function Header() {
             </Link>
             <Link to="/cart" className={classes.cart}>
               <BiCart size={35} />
-              <span>{cartItems.length}</span> {/* Show item count */}
+              <span>{basket.length}</span> {/* Show item count */}
             </Link>
           </div>
 

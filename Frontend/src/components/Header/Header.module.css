@@ -216,6 +216,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    color: aliceblue;
   }
   
   .cart {
@@ -223,6 +224,8 @@
     align-items: center;
     position: relative;
     transition: transform 0.2s ease;
+    color: aliceblue;
+
   }
   
   .cart:hover {
