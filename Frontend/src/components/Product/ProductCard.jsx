@@ -2,13 +2,13 @@ import React, { useContext, useState } from 'react';
 import Rating from '@mui/material/Rating';
 import classes from './Product.module.css';
 import { FaSearchPlus, FaTimes } from 'react-icons/fa';
-import { DataContext } from '../DataProvider/DataProvider';
+import { DataContext } from '../../components/DataProvider/DataProvider.jsx';
 import { Type } from '../../pages/Utility/action.type'; // <-- FIXED this import
 
 function ProductCard({ product }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { image, title, rating, price, description } = product;
-  const { state, dispatch } = useContext(DataContext);
+  const [ state, dispatch ] = useContext(DataContext);
 
   const toggleModal = () => setIsModalOpen(!isModalOpen);
 
@@ -17,6 +17,7 @@ function ProductCard({ product }) {
       style: 'currency',
       currency: 'USD',
     }).format(amount);
+    console.log(state)
 
   const addToCart = () => {
     dispatch({

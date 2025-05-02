@@ -1,6 +1,6 @@
 import React from "react";
 import Routing from "./components/Router";
-import { CartProvider } from "./components/CartContext"; // Make sure path is correct
+import { CartProvider } from "./components/CartContext";
 
 function App() {
   return (
