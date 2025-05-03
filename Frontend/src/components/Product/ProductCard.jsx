@@ -5,7 +5,7 @@ import { FaSearchPlus, FaTimes } from 'react-icons/fa';
 import { DataContext } from '../../components/DataProvider/DataProvider.jsx';
 import { Type } from '../../pages/Utility/action.type'; // <-- FIXED this import
 
-function ProductCard({ product }) {
+function ProductCard({ product , renderAdd = true}) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { image, title, rating, price, description } = product;
   const [ state, dispatch ] = useContext(DataContext);
@@ -22,7 +22,8 @@ function ProductCard({ product }) {
   const addToCart = () => {
     dispatch({
       type: Type.ADD_TO_BASKET,
-      item: { image, title, rating, price, description },
+      item: { id:product.id,  // <-- FIXED this line
+        image, title, rating, price, description , amount: 1 },
     });
   };
 
@@ -43,9 +44,11 @@ function ProductCard({ product }) {
             <small>({rating.count})</small>
           </div>
           <div className={classes.price}>{formatPrice(price)}</div>
+          {renderAdd && (
           <button className={classes.button} onClick={addToCart}>
             Add to Cart
           </button>
+          )}
         </div>
       </div>
 
@@ -68,9 +71,11 @@ function ProductCard({ product }) {
             </div>
             <div className={classes.price}>{formatPrice(price)}</div>
             <p>{description}</p>
+            {renderAdd && (
             <button className={classes.button} onClick={addToCart}>
               Add to Cart
             </button>
+            )}
           </div>
         </div>
       )}

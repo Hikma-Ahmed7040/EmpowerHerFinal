@@ -41,7 +41,12 @@ function Cart() {
           ) : (
             basket.map((item, i) => (
               <section className={classes.cart_product} key={item.id || i}>
-                <ProductCard product={item} flex={true} renderAdd={true} desc={true} />
+                <ProductCard 
+                  product={item} 
+                  flex={true} 
+                  renderAdd={false}
+                  desc={true} 
+                />
                 <div className={classes.btn_container}>
                   <button className={classes.btn} onClick={() => increment(item.id)}>
                     <IoIosArrowUp size={20} />

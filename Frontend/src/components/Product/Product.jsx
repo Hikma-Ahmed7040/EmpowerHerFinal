@@ -7,32 +7,21 @@ import allProducts from './productData';
 
 const PRODUCTS_PER_PAGE = 16;
 
-// Helper to turn any category/title into a URL‑safe slug
 const makeSlug = (str) =>
-  str
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, '-')     // spaces → dashes
-    .replace(/[^\w-]/g, '');  // strip punctuation
+  str.toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
 
 export default function Product() {
   const { slug } = useParams();
 
-  // Filtered or full product list
   const filteredProducts = slug
     ? allProducts.filter(p => makeSlug(p.category) === slug)
     : allProducts;
 
   const [visibleCount, setVisibleCount] = useState(PRODUCTS_PER_PAGE);
-
-  const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + PRODUCTS_PER_PAGE);
-  };
-
+  const handleLoadMore = () => setVisibleCount((prev) => prev + PRODUCTS_PER_PAGE);
   const visibleProducts = filteredProducts.slice(0, visibleCount);
   const hasMore = visibleCount < filteredProducts.length;
 
-  // No matches?
   if (slug && filteredProducts.length === 0) {
     return (
       <section className={classes.product_container}>
@@ -47,10 +36,10 @@ export default function Product() {
         <ProductCard
           key={product.id}
           product={product}
+          desc={true}
           style={{ animationDelay: `${index * 0.1}s` }}
         />
       ))}
-
       {hasMore && (
         <div className={classes.loadMoreWrapper}>
           <button onClick={handleLoadMore} className={classes.loadMoreButton}>

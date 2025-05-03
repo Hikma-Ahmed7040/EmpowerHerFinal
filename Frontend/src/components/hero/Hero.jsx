@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom'; // ✅ Make sure this is imported
 import './hero.css'; // Import the CSS file
+// import {AuthSeller} from '../../pages/AuthSeller/AuthSeller'
 
 const Hero = () => {
   const [currentBgIndex, setCurrentBgIndex] = useState(0);
-  
-  // Array of image URLs from the internet
+
   const bgImages = [
     'https://static.vecteezy.com/system/resources/previews/028/901/655/non_2x/of-emotional-dynamic-pose-african-woman-in-autumn-ai-generative-free-photo.jpg',
     'https://static.vecteezy.com/system/resources/previews/028/901/730/non_2x/of-emotional-dynamic-pose-african-woman-in-autumn-ai-generative-free-photo.jpg',
@@ -13,32 +14,29 @@ const Hero = () => {
     'https://media.istockphoto.com/id/1277113035/photo/young-black-beauty-with-afro-hairstyle.jpg?s=170667a&w=0&k=20&c=OaHeq4LSgAMM1DfFN12CYWVDNfjMb8EgeScIescmajg='
   ];
 
-  // Auto-rotate backgrounds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentBgIndex((prevIndex) => 
+      setCurrentBgIndex((prevIndex) =>
         prevIndex === bgImages.length - 1 ? 0 : prevIndex + 1
       );
     }, 5000);
-
     return () => clearInterval(interval);
   }, [bgImages.length]);
 
-  // Manual navigation
   const goToSlide = (index) => {
     setCurrentBgIndex(index);
   };
 
   return (
     <section className="hero-section">
-      {/* Dynamic Background Images */}
+      {/* Background images */}
       {bgImages.map((imageUrl, index) => (
         <motion.div
           key={index}
           className="hero-bg-image"
           style={{ backgroundImage: `url(${imageUrl})` }}
           initial={{ opacity: 0 }}
-          animate={{ 
+          animate={{
             opacity: index === currentBgIndex ? 1 : 0,
             scale: index === currentBgIndex ? 1 : 1.05
           }}
@@ -46,10 +44,8 @@ const Hero = () => {
         />
       ))}
 
-      {/* Gradient Overlay */}
       <div className="hero-overlay"></div>
 
-      {/* Content */}
       <div className="hero-content">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -73,23 +69,26 @@ const Hero = () => {
           </motion.p>
         </motion.div>
 
+        {/* Button to Seller Registration */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <motion.button
-            className="hero-button"
-            whileHover={{ 
-              scale: 1.05,
-              y: -3,
-              boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.3)'
-            }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <span className="hero-button-text">Shop Now</span>
-            <span className="hero-button-hover"></span>
-          </motion.button>
+          <Link to="/seller" className="hero-link">
+            <motion.button
+              className="hero-button"
+              whileHover={{
+                scale: 1.05,
+                y: -3,
+                boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.3)'
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <span className="hero-button-text">Become a Seller</span>
+              <span className="hero-button-hover"></span>
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
 
