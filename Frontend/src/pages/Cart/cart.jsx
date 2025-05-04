@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import ProductCard from '../../Components/Product/ProductCard';
 import { DataContext } from '../../components/DataProvider/DataProvider';
 import CurrencyFormat from '../../Components/CurrencyFormat/CurrencyFormat';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import classes from "./Cart.module.css";
 import { Type } from '../Utility/action.type';
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
@@ -10,6 +10,16 @@ import LayOut from '../../components/Layout/Layout';
 
 function Cart() {
   const [{ basket, user }, dispatch] = useContext(DataContext);
+  const navigate = useNavigate();
+  const [localUser, setLocalUser] = useState(null);
+
+  useEffect(() => {
+    // In case user from context is null on refresh
+    const storedUser = JSON.parse(localStorage.getItem('user'));
+    if (storedUser) {
+      setLocalUser(storedUser);
+    }
+  }, [user]);
 
   const total = basket.reduce((amount, item) => {
     return item.price * item.amount + amount;
@@ -29,11 +39,21 @@ function Cart() {
     });
   };
 
+  const handleCheckout = () => {
+    const activeUser = user || localUser;
+    if (!activeUser) {
+      alert("Please log in to proceed to checkout.");
+      navigate("/auth");
+    } else {
+      navigate("/payments");
+    }
+  };
+
   return (
     <LayOut>
       <section className={classes.container}>
         <div className={classes.cart__container}>
-          <h2>Hello {user ? user.name : ""}</h2>
+          <h2>Hello {(user || localUser)?.name || ""}</h2>
           <h3>Your Shopping Basket</h3>
 
           {basket?.length === 0 ? (
@@ -71,7 +91,9 @@ function Cart() {
               <input type="checkbox" id="gift" />
               <label htmlFor="gift"><small>This order contains a gift</small></label>
             </span>
-            <Link to="/payments" className={classes.checkout_btn}>Continue to checkout</Link>
+            <button onClick={handleCheckout} className={classes.checkout_btn}>
+              Continue to checkout
+            </button>
           </div>
         )}
       </section>

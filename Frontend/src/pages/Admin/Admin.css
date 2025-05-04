@@ -1,0 +1,33 @@
+.admin-dashboard {
+  padding: 2rem;
+  background: #f9f6f2;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.admin-table th, .admin-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #f4cc70;
+}
+
+.admin-table button {
+  margin-right: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background-color: #6aa84f;
+  color: white;
+  cursor: pointer;
+}
+
+.admin-table button:last-child {
+  background-color: #d9534f;
+}

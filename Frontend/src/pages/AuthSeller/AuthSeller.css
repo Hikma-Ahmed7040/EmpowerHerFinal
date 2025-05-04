@@ -2,11 +2,11 @@
       display: flex;
       justify-content: center;
       padding: 3rem;
-      background-color: #ecc456;
+      background-color: #e5d7b0;
     }
     
     .form-card {
-      background: rgb(227, 215, 191);
+      background: rgb(232, 213, 159);
       padding: 2rem 3rem;
       border-radius: 12px;
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);

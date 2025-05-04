@@ -1,0 +1,44 @@
+/* Payment.module.css */
+.payment_container {
+      padding: 2rem;
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .payment_container input {
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    
+    .pay_btn {
+      padding: 0.7rem;
+      background-color: #784421;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    
+    .success_popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .popup_box {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+    }
+    

@@ -1,25 +1,15 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { auth, db } from '../Utility/firebase';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { db, auth } from '../Utility/firebase';
+import { collection, addDoc } from 'firebase/firestore';
 import './AuthSeller.css';
 
 function SellerRegister() {
   const [form, setForm] = useState({
-    fullName: '',
-    email: '',
-    phone: '',
-    location: '',
-    shopName: '',
-    productType: '',
-    story: '',
-    experience: '',
-    paymentMethod: '',
-    needsTraining: false,
-    password: '',
-    confirmPassword: '',
-    photo: null,
-    idUpload: null
+    fullName: '', email: '', phone: '', location: '', shopName: '',
+    productType: '', story: '', experience: '', paymentMethod: '',
+    needsTraining: false, password: '', confirmPassword: ''
   });
 
   const [error, setError] = useState('');
@@ -28,21 +18,23 @@ function SellerRegister() {
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    const { name, value, type, checked, files } = e.target;
+    const { name, value, type, checked } = e.target;
     setForm(prev => ({
       ...prev,
-      [name]: type === 'checkbox' ? checked : type === 'file' ? files[0] : value
+      [name]: type === 'checkbox' ? checked : value
     }));
     setTouched(prev => ({ ...prev, [name]: true }));
   };
 
-  const isPasswordValid = (password) => {
-    return password.length >= 8 && /[a-zA-Z]/.test(password);
-  };
+  const isPasswordValid = (password) => password.length >= 8 && /[a-zA-Z]/.test(password);
 
   const isFormComplete = () => {
-    const requiredFields = ['fullName', 'email', 'phone', 'location', 'shopName', 'productType', 'story', 'experience', 'paymentMethod', 'password', 'confirmPassword', 'photo', 'idUpload'];
-    return requiredFields.every(field => form[field] !== '' && form[field] !== null);
+    const required = [
+      'fullName', 'email', 'phone', 'location', 'shopName',
+      'productType', 'story', 'experience', 'paymentMethod',
+      'password', 'confirmPassword'
+    ];
+    return required.every(field => form[field] !== '');
   };
 
   const handleSubmit = async (e) => {
@@ -50,29 +42,15 @@ function SellerRegister() {
     setError('');
     setLoading(true);
 
-    if (!isFormComplete()) {
-      setError("Please fill in all required fields.");
-      setLoading(false);
-      return;
-    }
-
-    if (!isPasswordValid(form.password)) {
-      setError("Password must be at least 8 characters and contain letters.");
-      setLoading(false);
-      return;
-    }
-
-    if (form.password !== form.confirmPassword) {
-      setError("Passwords do not match.");
-      setLoading(false);
-      return;
-    }
-
     try {
+      if (!isFormComplete()) return setError('Please fill in all required fields.');
+      if (!isPasswordValid(form.password)) return setError('Password must be at least 8 characters and contain letters.');
+      if (form.password !== form.confirmPassword) return setError('Passwords do not match.');
+
       const userCredential = await createUserWithEmailAndPassword(auth, form.email, form.password);
       const user = userCredential.user;
 
-      await db.collection('sellers').doc(user.uid).set({
+      await addDoc(collection(db, 'sellers'), {
         fullName: form.fullName,
         email: form.email,
         phone: form.phone,
@@ -84,22 +62,22 @@ function SellerRegister() {
         paymentMethod: form.paymentMethod,
         needsTraining: form.needsTraining,
         status: 'pending',
-        createdAt: new Date()
+        createdAt: new Date().toISOString(),
+        uid: user.uid
       });
 
-      alert("🎉 Registration successful! Await admin approval.");
-      navigate("/", { replace: true });
+      alert('🎉 Seller registered successfully!');
+      navigate('/', { replace: true });
     } catch (err) {
-      console.error(err);
-      setError(err.message);
+      console.error('Registration error:', err);
+      setError('Something went wrong. Please try again.');
+    } finally {
+      setLoading(false);
     }
-
-    setLoading(false);
   };
 
-  const getInputClass = (field) => {
-    return touched[field] && (!form[field] || form[field] === '') ? 'invalid' : '';
-  };
+  const getInputClass = (field) =>
+    touched[field] && (!form[field] || form[field] === '') ? 'invalid' : '';
 
   return (
     <div className="seller-register-page">
@@ -163,19 +141,8 @@ function SellerRegister() {
           </div>
 
           <div className="form-group">
-            <label>Tell Something About You😊</label>
+            <label>Your Story</label>
             <textarea className={getInputClass("story")} name="story" value={form.story} onChange={handleChange} rows="4" />
-          </div>
-
-          <div className="grid-two-columns">
-            <div className="form-group">
-              <label>Upload Your Photo</label>
-              <input className={getInputClass("photo")} type="file" name="photo" accept="image/*" onChange={handleChange} />
-            </div>
-            <div className="form-group">
-              <label>Upload Your ID</label>
-              <input className={getInputClass("idUpload")} type="file" name="idUpload" accept="image/*" onChange={handleChange} />
-            </div>
           </div>
 
           <div className="form-group checkbox">
