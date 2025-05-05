@@ -6,13 +6,13 @@ import { Type } from "../../pages/Utility/action.type";
 
 export const DataContext = createContext();
 
-// Read basket from localStorage when app starts
 const getInitialState = () => {
-  const savedBasket = localStorage.getItem("basket");
+  const user = JSON.parse(localStorage.getItem("user"));
+  const savedBasket = user ? JSON.parse(localStorage.getItem(`basket_${user.uid}`)) : [];
   return {
-    basket: savedBasket ? JSON.parse(savedBasket) : [],
+    basket: savedBasket || [],
     basketCount: 0,
-    user: null, // we’ll set this with Firebase
+    user: user || null,
   };
 };
 
@@ -22,16 +22,24 @@ export const DataProvider = ({ children }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       if (currentUser) {
+        const userData = {
+          uid: currentUser.uid,
+          email: currentUser.email,
+          name: currentUser.displayName || "User",
+        };
         dispatch({
           type: Type.SET_USER,
-          user: {
-            uid: currentUser.uid,
-            email: currentUser.email,
-            name: currentUser.displayName || "User",
-          },
+          user: userData,
+        });
+
+        const storedBasket = JSON.parse(localStorage.getItem(`basket_${userData.uid}`));
+        dispatch({
+          type: Type.SET_BASKET,
+          basket: storedBasket || [],
         });
       } else {
         dispatch({ type: Type.SET_USER, user: null });
+        dispatch({ type: Type.CLEAR_BASKET });
       }
     });
 

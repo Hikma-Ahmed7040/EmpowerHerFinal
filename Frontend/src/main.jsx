@@ -4,11 +4,11 @@ import { BrowserRouter } from "react-router-dom";
 import App from './App';
 import './index.css';
 import { DataProvider } from './components/DataProvider/DataProvider';
-import { initialState, reducer } from './pages/Utility/reducer';
+import { reducer } from './pages/Utility/reducer';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <DataProvider reducer={reducer} initialState={initialState}>
+    <DataProvider reducer={reducer}>
       <App />
     </DataProvider>
   </BrowserRouter>
