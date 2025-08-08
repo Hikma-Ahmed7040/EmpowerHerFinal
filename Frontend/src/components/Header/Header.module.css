@@ -1,5 +1,10 @@
 /* Header.module.css */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display:wght@700&display=swap');
+/* Prevent horizontal scroll on mobile */
+body, html {
+  overflow-x: hidden;
+}
+
 .fixed {
     position: fixed;
     top: 0;
@@ -60,8 +65,24 @@
 
 /* Keep existing media queries, add this adjustment */
 @media (max-width: 480px) {
+  .order__container div p,
+  .order__container div span {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .order__container {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .cart {
+    margin-left: 10px;
+  }
   .logo__container h1 {
-      font-size: 22px;
+      font-size: 20px;
       letter-spacing: 1px;
   }
   
@@ -246,11 +267,21 @@
   /* Responsive Adjustments */
   @media (max-width: 480px) {
     .header__container {
-      padding: 10px 15px;
+      padding: 0px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;         /* ⛔ Prevent items from wrapping */
+      overflow-x: hidden;
+      padding: 0 12px;
+      gap: 10px;
     }
   
     .logo__container h1 {
       font-size: 20px;
+      white-space: nowrap;       /* 🧵 Prevent text from wrapping */
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   
     .order__container {

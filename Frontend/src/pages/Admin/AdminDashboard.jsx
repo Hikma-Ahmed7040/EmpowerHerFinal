@@ -8,7 +8,7 @@ function Admin() {
   const [sellers, setSellers] = useState([]);
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
-
+   
   useEffect(() => {
     const fetchData = async () => {
       try {
