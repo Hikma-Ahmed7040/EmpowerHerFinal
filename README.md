@@ -10,7 +10,7 @@ The platform includes seller registration, user authentication, and an admin das
 
 ## 🎥 Hero Carousel Demo
 
-https://github.com/Hikma-Ahmed7040/EmpowerHer/Demo/herovid.mp4  
+https://github.com/Hikma-Ahmed7040/EmpowerHer/blob/main/Demo/herovid.mp4
 *🎞️ This short video showcases the smooth hero section carousel effect.*
 
 
