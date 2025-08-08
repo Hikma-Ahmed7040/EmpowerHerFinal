@@ -31,7 +31,6 @@ https://github.com/Hikma-Ahmed7040/EmpowerHerFinal/blob/main/Demo/herovid.mp4
 |--------------|---------------------|-----------------|
 | ![Landing Page](./Demo/landing.png) | ![Seller Registration](./Demo/seller_register.png) | ![Admin Dashboard](./Demo/adminDash1.png) |
 
-> 💡 Tip: YOu can find this image in a `Demo/` folder in this repository.
 
 ---
 
@@ -55,7 +54,6 @@ https://github.com/Hikma-Ahmed7040/EmpowerHerFinal/blob/main/Demo/herovid.mp4
 - 🧑‍💼 Admin dashboard to monitor activity
 - 🔒 User authentication using Firebase
 - 🪄 Animated hero carousel with smooth transitions
-- 📱 Mobile-first responsive UI
 - 🌍 Focus on promoting local women-led businesses
 
 ---
@@ -64,7 +62,7 @@ https://github.com/Hikma-Ahmed7040/EmpowerHerFinal/blob/main/Demo/herovid.mp4
 
 Originally developed for the **Technovation Girls Challenge** as a solo project with mentor guidance.
 
-Although the team didn’t qualify internationally, this project showcases passion, fast learning, and real-world problem solving with modern full-stack tools.
+Although the team didn’t qualify internationally, this project showcases MY passion, fast learning, and real-world problem solving with modern full-stack tools.
 
 ---
 
